@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 298.0 298.0" width="298.0" height="298.0">
+<rect x="0" y="0" width="298.0" height="298.0" fill="white"/>
+<line x1="24.0" y1="274.0" x2="74.0" y2="274.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="74.0" y1="274.0" x2="74.0" y2="224.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="74.0" y1="224.0" x2="124.0" y2="224.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="124.0" y1="224.0" x2="124.0" y2="174.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="124.0" y1="174.0" x2="174.0" y2="174.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="174.0" y1="174.0" x2="174.0" y2="124.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="174.0" y1="124.0" x2="224.0" y2="124.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="224.0" y1="124.0" x2="224.0" y2="74.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="224.0" y1="74.0" x2="274.0" y2="74.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+<line x1="274.0" y1="74.0" x2="274.0" y2="24.0" stroke="green" stroke-width="2.0" stroke-linecap="round"/>
+</svg>

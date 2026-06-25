@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Move the Turtle — Lesson Plan Grid (Intern Card)</title>
+<style>
+  *{box-sizing:border-box;}
+  body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;color:#1d2433;margin:0;font-size:9.5px;}
+  .page{width:297mm;min-height:210mm;padding:8mm;margin:0 auto;background:#fff;}
+  .head{display:flex;justify-content:space-between;align-items:center;
+        border:2px solid #c9d2e0;border-radius:8px;background:#f3f7fb;padding:6px 12px;margin-bottom:7px;}
+  h1{font-size:17px;margin:0;}
+  .sub{font-size:10px;color:#5a6473;}
+  table{width:100%;border-collapse:collapse;table-layout:fixed;}
+  th,td{border:1px solid #c2cbd9;padding:4px 5px;vertical-align:top;}
+  thead th{background:#1763c6;color:#fff;font-size:10px;}
+  th.time{width:62px;background:#0f4ea3;}
+  tbody th{background:#eef2f8;font-size:9px;text-align:left;width:62px;color:#0f4ea3;}
+  .sess{font-weight:700;}
+  .topic{color:#1b8a4b;font-weight:600;}
+  .lab{color:#b9760a;}
+  .blk{font-size:8.7px;line-height:1.25;}
+  .tag{display:inline-block;font-size:7.5px;padding:1px 4px;border-radius:4px;color:#fff;margin-bottom:2px;}
+  .t-warm{background:#8e44ad;} .t-teach{background:#1763c6;} .t-lab{background:#b9760a;}
+  .t-chal{background:#c0392b;} .t-wrap{background:#1b8a4b;} .t-break{background:#5a6473;}
+  .legend{margin-top:7px;font-size:8.7px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+  .foot{margin-top:6px;font-size:8.5px;color:#5a6473;display:flex;justify-content:space-between;border-top:1px solid #c9d2e0;padding-top:4px;}
+  .rules{margin-top:6px;border:1.4px solid #b9760a;background:#fdf6ec;border-radius:6px;padding:5px 9px;font-size:8.8px;}
+  .rules b{color:#b9760a;}
+  @media print{
+    .page{width:auto;min-height:auto;padding:6mm;}
+    @page{size:A4 landscape;margin:0;}
+    thead th,tbody th,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <div><h1>🐢 Move the Turtle — Intern Lesson-Plan Card</h1>
+    <div class="sub">7 sessions × 3 hours each &nbsp;•&nbsp; keep students <b>typing & running code</b> at least half the time</div></div>
+    <div class="sub">Intern: __________________</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="time">Time →<br>Session ↓</th>
+        <th>0:00–0:15<br><span class="tag t-warm">WARM-UP</span></th>
+        <th>0:15–0:50<br><span class="tag t-teach">TEACH A</span></th>
+        <th>0:50–1:25<br><span class="tag t-lab">LAB A</span></th>
+        <th>1:25–1:35<br><span class="tag t-break">BREAK</span></th>
+        <th>1:35–2:10<br><span class="tag t-teach">TEACH B + LAB</span></th>
+        <th>2:10–2:45<br><span class="tag t-chal">CHALLENGE</span></th>
+        <th>2:45–3:00<br><span class="tag t-wrap">WRAP + H/W</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>S1<br><span class="sess">First Turtle</span></th>
+        <td class="blk">Housie; "Have you used a computer?"</td>
+        <td class="blk"><span class="topic">Input→Process→Output</span>; why Python; <code>print</code>, comments, variables, <code>input</code>, <code>int()</code></td>
+        <td class="blk"><span class="lab">Greeter + 2-number calculator</span> (text mode)</td>
+        <td class="blk">☕</td>
+        <td class="blk">Meet turtle: skeleton, forward/left/right; <span class="lab">dot, line, square, triangle</span></td>
+        <td class="blk">Initials + happy face 🙂</td>
+        <td class="blk">Recap; H/W: subtract, multiply, fav-colour turtle, rectangle</td>
+      </tr>
+      <tr>
+        <th>S2<br><span class="sess">Pen & Loops</span></th>
+        <td class="blk">Recall quiz; "You are the turtle" body game</td>
+        <td class="blk"><span class="topic">Pen up/down, size, colour, hex; fill sandwich</span></td>
+        <td class="blk"><span class="lab">Smiley face + flag</span></td>
+        <td class="blk">☕</td>
+        <td class="blk"><span class="topic">DRY → <code>for</code> loop</span>, range, indentation; <span class="lab">square, staircase, polygon</span></td>
+        <td class="blk">Colourful circle row 🌈</td>
+        <td class="blk">Recap; H/W: filled circle, outline vs fill, 5-circle pattern, hexagon</td>
+      </tr>
+      <tr>
+        <th>S3<br><span class="sess">If / Else</span></th>
+        <td class="blk">Operator flashcards</td>
+        <td class="blk"><span class="topic">int/float/string, <code>type()</code>, convert; arithmetic + <code>%</code>; compare ops</span></td>
+        <td class="blk"><span class="lab">Calculator, area, even/odd</span></td>
+        <td class="blk">☕</td>
+        <td class="blk"><span class="topic">Booleans, and/or/not, <code>if/elif/else</code></span>; <span class="lab">spiral + traffic light</span></td>
+        <td class="blk">Grade checker 🎓</td>
+        <td class="blk">Recap; H/W: temp, name compare, +/–/zero, even=green</td>
+      </tr>
+      <tr>
+        <th>S4<br><span class="sess">Loops Deep</span></th>
+        <td class="blk">"Climb 200 stairs" story; voting recall</td>
+        <td class="blk"><span class="topic"><code>range(start,stop,step)</code>, loop a list, accumulator</span></td>
+        <td class="blk"><span class="lab">Times table, countdown, polygon family</span></td>
+        <td class="blk">☕</td>
+        <td class="blk"><span class="topic"><code>while</code> + counter, infinite-loop danger, nested loops</span></td>
+        <td class="blk">Draw the Sun ☀️</td>
+        <td class="blk">Recap; H/W: 5-table, count-down while, star triangle, sum 1–100</td>
+      </tr>
+      <tr>
+        <th>S5<br><span class="sess">Functions & Map</span></th>
+        <td class="blk">Musical chairs; coordinate guessing</td>
+        <td class="blk"><span class="topic">Coordinates (0,0), goto; screen setup/bg/title; pixels</span></td>
+        <td class="blk"><span class="lab">Olympic rings + square animation + spin</span></td>
+        <td class="blk">☕</td>
+        <td class="blk"><span class="topic"><code>def</code> functions + parameters</span>; <span class="lab">star stamp, polygon()</span></td>
+        <td class="blk">Build a House 🏠 + H·O·P·E mini-test</td>
+        <td class="blk">Recap; H/W: draw_triangle(), 4 stars, window, flower</td>
+      </tr>
+      <tr>
+        <th>S6<br><span class="sess">Random & Final</span></th>
+        <td class="blk">Real dice → "what is random?"</td>
+        <td class="blk"><span class="topic"><code>random.randint/choice</code>; fireworks (nested loop)</span></td>
+        <td class="blk"><span class="lab">Fireworks + random walk</span></td>
+        <td class="blk">☕</td>
+        <td class="blk"><span class="topic"><code>while True</code>, <code>tracer/update</code>, <code>xcor()</code> game logic</span>; <span class="lab">moving ball</span></td>
+        <td class="blk"><b>FINAL TEST:</b> Moon sky 🌙 (40 marks)</td>
+        <td class="blk">Recap; H/W: 12 fireworks, faster ball, 5th star, bounce</td>
+      </tr>
+      <tr>
+        <th>S7<br><span class="sess">Racing & Capstone</span></th>
+        <td class="blk"><code>randint</code> recap; re-run random walk</td>
+        <td class="blk"><span class="topic">Many turtle objects; build the race track</span></td>
+        <td class="blk"><span class="lab">Add 4 players + race!</span></td>
+        <td class="blk">☕</td>
+        <td class="blk"><span class="topic">Winner detection (stretch); your own twist</span></td>
+        <td class="blk"><b>Capstone</b> project (pick from menu)</td>
+        <td class="blk">🎤 Showcase + certificates + feedback</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="legend">
+    <b>Flow each session:</b>
+    <span class="tag t-warm">WARM-UP 15m</span>
+    <span class="tag t-teach">TEACH+DEMO</span>
+    <span class="tag t-lab">HANDS-ON LAB</span>
+    <span class="tag t-break">BREAK 10m</span>
+    <span class="tag t-chal">CHALLENGE</span>
+    <span class="tag t-wrap">WRAP + HOMEWORK</span>
+  </div>
+
+  <div class="rules">
+    <b>Intern reminders:</b> &nbsp;① Every turtle program ends with <code>turtle.done()</code>.
+    ② Watch for the 4 classics: <code>print "x"</code> → <code>print("x")</code>, missing <code>:</code>, missing indent, <code>colour</code>→<code>color</code>.
+    ③ If short on time, cut the <b>Challenge</b> first — <b>never</b> cut Lab A.
+    ④ Functions (<code>def</code>) start in <b>S5</b> — don't introduce earlier.
+    ⑤ Mark mini-test (S5) &amp; final test (S6) with the rubric. Absentees finish missed labs before tests.
+  </div>
+
+  <div class="foot">
+    <span>🐢 Move the Turtle — CrEAST &nbsp;|&nbsp; print A4 landscape, fold in pocket</span>
+    <span>Code: Corrected_Code_Python3/ &nbsp;•&nbsp; Notes: Notes/</span>
+  </div>
+</div>
+</body>
+</html>

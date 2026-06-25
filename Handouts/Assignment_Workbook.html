@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Move the Turtle — My Assignment Workbook</title>
+<style>
+  *{box-sizing:border-box;}
+  body{font-family:"Segoe UI",Helvetica,Arial,sans-serif;color:#1d2433;margin:0;font-size:12px;line-height:1.45;}
+  .page{width:210mm;min-height:297mm;padding:14mm;margin:0 auto;background:#fff;position:relative;}
+  .page + .page{page-break-before:always;}
+
+  /* cover */
+  .cover{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+  .cover h1{font-size:34px;margin:6px 0;}
+  .cover .turtle{font-size:70px;}
+  .cover .tagline{color:#5a6473;font-size:15px;}
+  .namebox{margin-top:26px;border:2px solid #1763c6;border-radius:12px;padding:16px 26px;width:78%;}
+  .namebox div{margin:10px 0;font-size:14px;}
+  .line{display:inline-block;border-bottom:1.5px solid #1d2433;min-width:230px;}
+
+  .progress{margin-top:22px;width:78%;border:2px solid #c9d2e0;border-radius:12px;padding:12px 18px;}
+  .progress h3{margin:0 0 8px;font-size:13px;color:#1763c6;}
+  .ptrack{display:flex;justify-content:space-between;gap:6px;}
+  .star{font-size:11px;color:#5a6473;text-align:center;flex:1;}
+  .star .box{display:block;width:26px;height:26px;border:2px solid #b9760a;border-radius:50%;margin:0 auto 3px;}
+
+  /* assignment pages */
+  .band{border:2px solid #c9d2e0;border-radius:10px;background:#f3f7fb;padding:8px 14px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;}
+  .band h2{margin:0;font-size:18px;}
+  .band .small{font-size:11px;color:#5a6473;}
+  .goal{font-size:11.5px;color:#1b8a4b;margin:0 0 10px;}
+  .q{border:1px solid #c9d2e0;border-radius:8px;padding:8px 12px;margin-bottom:9px;}
+  .q .qh{font-weight:700;}
+  .q .bonus{color:#b9760a;}
+  .hint{font-size:10.5px;color:#5a6473;font-style:italic;}
+  .answer{margin-top:6px;border:1px dashed #aab4c4;border-radius:6px;background:#fafbfd;
+          height:62px;background-image:repeating-linear-gradient(transparent,transparent 19px,#e6eaf1 20px);}
+  .answer.tall{height:92px;}
+  .answer .lbl{font-size:9px;color:#9aa3b2;padding:2px 6px;}
+  .check{font-size:10.5px;color:#1763c6;margin-top:4px;}
+  .foot{position:absolute;bottom:8mm;left:14mm;right:14mm;border-top:1px solid #c9d2e0;padding-top:5px;
+        color:#5a6473;font-size:10px;display:flex;justify-content:space-between;}
+  code{font-family:"Consolas","Courier New",monospace;color:#1763c6;}
+  @media print{
+    .page{width:auto;min-height:auto;padding:12mm;}
+    @page{size:A4 portrait;margin:0;}
+    .band,.namebox,.progress,.star .box{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<div class="page cover">
+  <div class="turtle">🐢</div>
+  <h1>My Assignment Workbook</h1>
+  <div class="tagline">Move the Turtle — Learn Python 3 by drawing! &nbsp;•&nbsp; CrEAST</div>
+
+  <div class="namebox">
+    <div>Name: <span class="line"></span></div>
+    <div>Class / School: <span class="line"></span></div>
+    <div>My favourite colour: <span class="line" style="min-width:150px"></span> &nbsp; 🎨</div>
+  </div>
+
+  <div class="progress">
+    <h3>⭐ My Progress — colour a circle when you finish each session!</h3>
+    <div class="ptrack">
+      <div class="star"><span class="box"></span>S1</div>
+      <div class="star"><span class="box"></span>S2</div>
+      <div class="star"><span class="box"></span>S3</div>
+      <div class="star"><span class="box"></span>S4</div>
+      <div class="star"><span class="box"></span>S5</div>
+      <div class="star"><span class="box"></span>S6</div>
+      <div class="star"><span class="box"></span>S7</div>
+    </div>
+  </div>
+
+  <p style="margin-top:22px;font-size:11px;color:#5a6473;width:80%">
+    💡 <b>How to use this book:</b> write your code in the boxes (or tick it off after you
+    type &amp; run it on the computer). After a drawing task, compare with the
+    <b>“Expected Outputs”</b> sheet — does yours match? ✅
+  </p>
+</div>
+
+<!-- ============ SESSION 1 ============ -->
+<div class="page">
+  <div class="band"><h2>📝 Session 1 — First Turtle</h2><span class="small">Text &amp; Turtle mode</span></div>
+  <p class="goal">Practise: <code>print()</code>, variables, <code>input()</code>, and basic turtle shapes.</p>
+
+  <div class="q"><div class="qh">Q1. Subtract 5 from 25 and print the answer.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q2. Ask the user for two numbers and print their <b>product</b>.</div>
+    <div class="hint">Hint: use <code>int(input(...))</code> for each number.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q3. Show the turtle in <b>your favourite colour</b>.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh bonus">⭐ Bonus. Draw a rectangle (sides 150, 80, 150, 80).</div>
+    <div class="check">✅ Self-check: compare with “Rectangle” on the Expected Outputs sheet.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="foot"><span>🐢 My Assignment Workbook</span><span>Session 1</span></div>
+</div>
+
+<!-- ============ SESSION 2 ============ -->
+<div class="page">
+  <div class="band"><h2>📝 Session 2 — Pen &amp; Loops</h2><span class="small">fill + <code>for</code> loops</span></div>
+  <p class="goal">Practise: filling shapes and repeating with a <code>for</code> loop.</p>
+
+  <div class="q"><div class="qh">Q1. Choose any fill colour and draw a <b>filled circle</b> of radius 50.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q2. Draw one circle <b>without</b> fill and one <b>with</b> fill. What's different?</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q3. Use a <b>loop</b> to draw <b>5 filled circles</b> of different colours in a row.</div>
+    <div class="hint">Hint: loop through a list of colours; move with <code>penup()</code> + <code>forward()</code>.</div>
+    <div class="check">✅ Self-check: compare with “Colourful Circle Row”.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh bonus">⭐ Bonus. Draw a hexagon (6 sides) with a loop.</div>
+    <div class="hint">Hint: turn <code>360 / 6 = 60</code> at each corner.</div>
+    <div class="check">✅ Self-check: compare with “Hexagon”.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="foot"><span>🐢 My Assignment Workbook</span><span>Session 2</span></div>
+</div>
+
+<!-- ============ SESSION 3 ============ -->
+<div class="page">
+  <div class="band"><h2>📝 Session 3 — If / Else</h2><span class="small">decisions</span></div>
+  <p class="goal">Practise: <code>if</code> / <code>elif</code> / <code>else</code> and comparisons.</p>
+
+  <div class="q"><div class="qh">Q1. Ask for a temperature. Print <code>Hot</code> if &gt; 30, <code>Cold</code> if &lt; 10, else <code>Pleasant</code>.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q2. Ask for two names; print whether they are the <b>same</b> or <b>different</b>.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q3. Ask for a number; print <b>positive</b>, <b>negative</b>, or <b>zero</b>.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh bonus">⭐ Bonus. Draw a circle that is <b>green if a number is even</b>, <b>red if odd</b>.</div>
+    <div class="hint">Hint: use <code>number % 2 == 0</code>.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="foot"><span>🐢 My Assignment Workbook</span><span>Session 3</span></div>
+</div>
+
+<!-- ============ SESSION 4 ============ -->
+<div class="page">
+  <div class="band"><h2>📝 Session 4 — Loops Deep Dive</h2><span class="small"><code>for</code>, <code>while</code>, nested</span></div>
+  <p class="goal">Practise: ranges, <code>while</code> loops, and nested loops.</p>
+
+  <div class="q"><div class="qh">Q1. Print the <b>5-times table</b> up to 5 × 12.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q2. Use a <code>while</code> loop to print numbers <b>10 down to 1</b>.</div>
+    <div class="hint">Hint: start at 10, subtract 1 each time, stop at 1.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q3. Use <b>nested loops</b> to print a star triangle:</div>
+    <div class="hint">* / ** / *** / **** (one more star each row)</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh bonus">⭐ Bonus. Add up all numbers from 1 to 100 with a loop and print the total.</div>
+    <div class="hint">Answer should be 5050!</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="foot"><span>🐢 My Assignment Workbook</span><span>Session 4</span></div>
+</div>
+
+<!-- ============ SESSION 5 ============ -->
+<div class="page">
+  <div class="band"><h2>📝 Session 5 — Functions &amp; Map</h2><span class="small"><code>def</code> + coordinates</span></div>
+  <p class="goal">Practise: writing your own commands with <code>def</code> and parameters.</p>
+
+  <div class="q"><div class="qh">Q1. Write a function <code>draw_triangle(size)</code> and use it for 3 triangles of different sizes.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q2. Use a <code>draw_star(x, y, size)</code> function to stamp <b>4 stars</b> at different spots.</div>
+    <div class="check">✅ Self-check: each star should look like “A Star” on the Expected Outputs sheet.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q3. Draw a house and add at least <b>one window</b>.</div>
+    <div class="check">✅ Self-check: compare the house with “House”.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh bonus">⭐ Bonus. Write a function <code>draw_flower()</code> (a loop of circles).</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="foot"><span>🐢 My Assignment Workbook</span><span>Session 5</span></div>
+</div>
+
+<!-- ============ SESSION 6 ============ -->
+<div class="page">
+  <div class="band"><h2>📝 Session 6 — Random &amp; Final</h2><span class="small">animation + <code>random</code></span></div>
+  <p class="goal">Practise: randomness and animation loops.</p>
+
+  <div class="q"><div class="qh">Q1. Make fireworks fire <b>12 times</b> with <b>5 colours</b> of your choice.</div>
+    <div class="check">✅ Self-check: compare with “Fireworks”.</div>
+    <div class="answer tall"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q2. Make the moving ball move <b>faster</b> and <b>change its colour</b>.</div>
+    <div class="hint">Hint: change <code>t.forward(1)</code> to a bigger number.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh">Q3. Add a <b>5th star</b> to your moon sky.</div>
+    <div class="check">✅ Self-check: compare with “Full Moon Sky”.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="q"><div class="qh bonus">⭐ Bonus. Make the ball <b>bounce back</b> instead of jumping to the start.</div>
+    <div class="hint">Hint: when it reaches the edge, use <code>t.setheading(180)</code> to turn around.</div>
+    <div class="answer"><span class="lbl">your code ↓</span></div></div>
+
+  <div class="foot"><span>🐢 My Assignment Workbook</span><span>Session 6</span></div>
+</div>
+
+<!-- ============ SESSION 7 — CAPSTONE ============ -->
+<div class="page">
+  <div class="band"><h2>🏆 Session 7 — My Capstone Project</h2><span class="small">put it all together!</span></div>
+  <p class="goal">Plan your own project using shapes, loops, if/else, functions &amp; randomness.</p>
+
+  <div class="q"><div class="qh">Step 1 — Which project? (circle one or write your own)</div>
+    <div class="hint">🏞️ Scenery &nbsp; • &nbsp; 🎯 Random art &nbsp; • &nbsp; 🌃 Night sky &nbsp; • &nbsp; 🚦 Traffic light &nbsp; • &nbsp; 🏁 My own race &nbsp; • &nbsp; ✍️ My name in shapes</div>
+    <div class="answer"><span class="lbl">my idea ↓</span></div></div>
+
+  <div class="q"><div class="qh">Step 2 — Sketch it here ✏️</div>
+    <div class="answer" style="height:150px;background-image:none;"><span class="lbl">draw your plan ↓</span></div></div>
+
+  <div class="q"><div class="qh">Step 3 — List the shapes/parts I need</div>
+    <div class="answer tall"><span class="lbl">e.g. circle for sun, triangle for roof ↓</span></div></div>
+
+  <div class="q"><div class="qh">Step 4 — Which loops / functions will I use?</div>
+    <div class="answer"><span class="lbl">↓</span></div></div>
+
+  <div class="foot"><span>🐢 My Assignment Workbook</span><span>Session 7 — Capstone</span></div>
+</div>
+
+<!-- ============ BACK PAGE ============ -->
+<div class="page">
+  <div class="band"><h2>🎉 I Finished the Course!</h2><span class="small">well done, coder!</span></div>
+  <p style="font-size:13px;">Tick everything you can now do — be proud! 💪</p>
+  <div style="font-size:13px;line-height:2.1;">
+    ☐ I can use <code>print()</code> and variables<br>
+    ☐ I can read input with <code>input()</code> and convert with <code>int()</code><br>
+    ☐ I can draw shapes with the turtle<br>
+    ☐ I can repeat code with <code>for</code> and <code>while</code> loops<br>
+    ☐ I can make decisions with <code>if</code> / <code>elif</code> / <code>else</code><br>
+    ☐ I can write my own commands with <code>def</code> functions<br>
+    ☐ I can use coordinates and <code>random</code><br>
+    ☐ I built an animation and a game! 🏁<br>
+    ☐ I finished my capstone project 🏆<br>
+  </div>
+  <div style="margin-top:24px;border:2px dashed #1b8a4b;border-radius:12px;padding:18px;text-align:center;">
+    <div style="font-size:15px;">🌟 <b>Certificate of Awesomeness</b> 🌟</div>
+    <div style="margin-top:10px;">This is to certify that <span class="line"></span></div>
+    <div style="margin-top:14px;">completed <b>Move the Turtle</b> and is now a real Python coder!</div>
+    <div style="margin-top:16px;font-size:11px;color:#5a6473;">Date: <span class="line" style="min-width:140px"></span> &nbsp;&nbsp; Teacher: <span class="line" style="min-width:140px"></span></div>
+  </div>
+  <div class="foot"><span>🐢 Move the Turtle — keep coding! 🚀</span><span>The End</span></div>
+</div>
+
+</body>
+</html>
